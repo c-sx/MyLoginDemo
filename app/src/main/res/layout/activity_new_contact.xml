@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <EditText
+        android:layout_marginVertical="5dp"
+        android:id="@+id/et_new_contact_telenum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg"
+        android:drawableLeft="@drawable/telephone"
+        android:drawablePadding="5dp"
+        android:hint="请输入紧急联系人电话"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:layout_marginVertical="5dp"
+        android:id="@+id/et_new_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="5dp"
+        android:hint="请输入紧急联系人姓名（选填）"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_below="@id/et_new_contact_telenum"/>
+    <Button
+        android:id="@+id/btn_new_contact_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_new_contact_name"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg"
+        android:text="确认" />
+
+
+</RelativeLayout>

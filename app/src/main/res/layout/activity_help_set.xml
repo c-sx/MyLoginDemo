@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/help_set_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="添加紧急联系人"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/help_set_tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_set_tv_1"
+        android:layout_marginHorizontal="15dp"
+        android:drawableLeft="@drawable/point"
+        android:text="设置后仅在使用一键报警或紧急情况下，会主动通知紧急联系人"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/help_set_tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_set_tv_2"
+        android:layout_marginHorizontal="15dp"
+        android:drawableLeft="@drawable/point"
+        android:text="您可以选择不同紧急联系人开启或关闭位置分享"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/help_set_tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_set_tv_3"
+        android:layout_marginHorizontal="15dp"
+        android:drawableLeft="@drawable/point"
+        android:text="目前仅支持号码归属地为中国大陆的手机号码"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@id/help_set_line_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/help_set_tv_4"
+        android:layout_marginVertical="20dp"
+        android:background="#BBBBBB" />
+
+    <TextView
+        android:id="@+id/help_set_tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_set_line_1"
+        android:layout_marginHorizontal="15dp"
+        android:drawableLeft="@drawable/user"
+        android:gravity="center_vertical"
+        android:text="    新增紧急联系人"
+        android:textSize="13dp"
+        />
+</RelativeLayout>

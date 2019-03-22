@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/et_reg_user"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/bg"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="5dp"
+        android:hint="用户名"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_reg_telenum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_reg_user"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/bg"
+        android:drawableLeft="@drawable/telephone"
+        android:drawablePadding="5dp"
+        android:hint="电话号码"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/reg_vcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reg_telenum"
+        android:layout_marginVertical="5dp">
+
+        <EditText
+            android:id="@+id/et_reg_vcode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/bg"
+            android:drawableLeft="@drawable/vcode"
+            android:drawablePadding="5dp"
+            android:hint="验证码"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_reg_vcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_reg_set_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/reg_vcode"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/bg"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:hint="设置密码"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_reg_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_reg_set_password"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/bg"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:hint="确认密码"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_reg_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reg_confirm_password"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg"
+        android:text="确认" />
+</RelativeLayout>
